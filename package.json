@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-cengage",
+  "version": "0.1.0",
+  "description": "Base eslint config for use in JavaScript projects at Cengage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "contributors": [
+    {
+      "name": "Van Slaars, Andy L",
+      "email": "andy.vanslaars@cengage.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://stash.corp.web:7990/projects/FRONT/repos/eslint-config-cengage"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}
