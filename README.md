@@ -9,7 +9,7 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### Non-React projects
 
 - Install `eslint-config-cengage` - TODO: Add npm cmd with nexus path
-- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-prettier`
+- Install peer dependencies: `npm install --save-dev eslint`
 - Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
 
 ```json
@@ -23,7 +23,7 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### React projects
 
 - Install `eslint-config-cengage` - TODO: Add npm cmd with nexus path
-- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-prettier eslint-plugin-jsx-a11y eslint-plugin-react`
+- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-jsx-a11y eslint-plugin-react`
 - Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
 
 ```json
@@ -51,18 +51,6 @@ eslint environments provide pre-defined globals for specific environments. The s
 
 The default config specifies rules by extending the `eslint:recommended` rule set.
 
-The default settings also include the `eslint-plugin-prettier` package and specify one rule to enable this:
-
-```js
-rules: {
-  'prettier/prettier': 'error'
-}
-```
-
-This plugin enforces the stylistic preferences defined in your project's Prettier config via eslint. **This is the only place that eslint should be enforcing stylistic rules.**
-
-_Note: I'm considering moving this out of the default settings and handling it differently, at least in the short-term._
-
 #### React
 
 The React config builds on the default settings, so it enforces the `eslint:recommended` rules and adds some more.
@@ -89,6 +77,35 @@ rules: {
   'jsx-a11y/heading-has-content': 0
 }
 ```
+
+### Local configuration
+
+#### Additional rules
+
+##### Enforcing Prettier's formatting
+
+You may choose to include the `eslint-plugin-prettier` package and specify one rule to enable this:
+
+```js
+rules: {
+  'prettier/prettier': 'error'
+}
+```
+
+This plugin enforces the stylistic preferences defined in your project's Prettier config via eslint. **This is the only place that eslint should be enforcing stylistic rules.**
+
+##### Additional rules
+
+Your team may choose to enforce additional rules, on your project(s) as long as you follow these guidelines:
+
+1.  Your rules can be more strict, but not reduce the strictness of any of the existing rules. In cases where a rule from this config is causing too much friction, you may temporarily override that rule and discuss with UI architecture if that rule should be changed in the standard, if the exception can be made for your project, or if you need to address that in your codebase.
+2.  Your rules do not conflict with any of the standard rules or automated formatting.
+3.  You are prepared to remove these rules if they conflict with standard rules in future updates.
+4.  Do not add rules that enforce stylistic options. Code format should be handled via Prettier and you can optionally choose to enforce that with the `eslint-plugin-prettier` mentioned above.
+
+This is subjective, so not listed as a guideline:
+
+**Consider the value and tradeoffs before adding overly restrictive rules to your team's ESLint config. Your added rules should not cause more friction than value.**
 
 ## Project Structure
 

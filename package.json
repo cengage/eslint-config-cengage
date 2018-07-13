@@ -23,7 +23,6 @@
   "license": "ISC",
   "peerDependencies": {
     "eslint": "^5.0.1",
-    "eslint-plugin-prettier": "^2.6.1",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.10.0"
   }
