@@ -41,10 +41,6 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 
 ## Config Rules and Settings
 
-### Environments
-
-eslint environments provide pre-defined globals for specific environments. The shared defaults include `browser` and `node`. Your project config should specify any additional environments needed. There are options for test frameworks that should be included for your framework(s). Learn more here: [Specifying environments](https://eslint.org/docs/user-guide/configuring#specifying-environments)
-
 ### Rules
 
 #### Default
@@ -78,11 +74,13 @@ rules: {
 }
 ```
 
-### Local configuration
+### Environments
 
-#### Additional rules
+eslint environments provide pre-defined globals for specific environments. The shared defaults include `browser` and `node`. Your project config should specify any additional environments needed (see [Additional Environments](#additional-environments) below).
 
-##### Enforcing Prettier's formatting
+## Local configuration
+
+### Enforcing Prettier's formatting
 
 You may choose to include the `eslint-plugin-prettier` package and specify one rule to enable this:
 
@@ -94,7 +92,11 @@ rules: {
 
 This plugin enforces the stylistic preferences defined in your project's Prettier config via eslint. **This is the only place that eslint should be enforcing stylistic rules.**
 
-##### Additional rules
+### Additional Environments
+
+There are options for test frameworks that should be included for your framework(s). Learn more here: [Specifying environments](https://eslint.org/docs/user-guide/configuring#specifying-environments)
+
+### Additional rules
 
 Your team may choose to enforce additional rules, on your project(s) as long as you follow these guidelines:
 
