@@ -1,16 +1,14 @@
 # eslint-config-cengage
 
-**Note: This is a WIP and is not _quite_ ready to be published. - Expect changes before this is "official"**
-
 This is a shared eslint configuration for JavaScript projects across Cengage.
 
 ## Usage
 
 ### Non-React projects
 
-- Install `eslint-config-cengage` - TODO: Add npm cmd with nexus path
+- Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
 - Install peer dependencies: `npm install --save-dev eslint`
-- Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
+- Create `.eslintrc` file in the project root with the following content
 
 ```json
 {
@@ -18,11 +16,11 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 }
 ```
 
-**This is a base configuration. You should extend this as needed with project specific options, such as `env` entries for your test framework.**
+**This is a base configuration. You should extend this as needed with project specific options, such as `env` entries or specific plugins for your test framework.**
 
 ### React projects
 
-- Install `eslint-config-cengage` - TODO: Add npm cmd with nexus path
+- Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
 - Install peer dependencies: `npm install --save-dev eslint eslint-plugin-jsx-a11y eslint-plugin-react`
 - Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
 
