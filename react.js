@@ -4,7 +4,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"
   ],
-  plugins: ["react", "jsx-a11y", "unicorn"],
+  plugins: ["react", "jsx-a11y"],
   parser: "babel-eslint",
   env: {
     jest: true
