@@ -7,7 +7,7 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### Non-React projects
 
 - Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
-- Install peer dependencies: `npm install --save-dev eslint`
+- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-unicorn`
 - Create `.eslintrc` file in the project root with the following content
 
 ```json
@@ -21,7 +21,7 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### React projects
 
 - Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
-- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-jsx-a11y eslint-plugin-react`
+- Install peer dependencies: `npm install --save-dev eslint babel-eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-unicorn`
 - Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
 
 ```json
