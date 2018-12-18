@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cengage",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Base eslint config for use in JavaScript projects at Cengage",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,11 @@
   },
   "license": "ISC",
   "peerDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.0.1",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.10.0"
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-unicorn": "^6.0.1"
   },
   "publishConfig": {
     "registry": "http://nexus.mindtap.corp.web/content/repositories/npm.cengage/"
