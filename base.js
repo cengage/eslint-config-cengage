@@ -19,7 +19,7 @@ module.exports = {
     'import'
   ],
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
   ],
   rules: {
     complexity: ['error', 10],
@@ -27,7 +27,7 @@ module.exports = {
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/tree/master/rules
     'unicorn/no-abusive-eslint-disable': 'error',
-
+    
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     'import/first': 'error',
     'import/no-amd': 'error',

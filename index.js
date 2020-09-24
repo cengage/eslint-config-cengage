@@ -10,17 +10,13 @@ module.exports = {
   parser: 'babel-eslint',
   overrides: [
     {
-      plugins: ['jest'],
+      plugins: [
+        'jest'
+      ],
       files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
-      
-      // https://github.com/jest-community/eslint-plugin-jest#rules
-      rules: {
-        'jest/expect-expect': 'warn',
-        'jest/no-identical-title': 'warn',
-        'jest/valid-describe': 'warn',
-        'jest/valid-expect': 'warn',
-        'jest/valid-expect-in-promise': 'warn',
-      },
+      extends: [
+        'plugin:jest/recommended'
+      ],
     },
     {
       files: ['**/*.ts?(x)'],
