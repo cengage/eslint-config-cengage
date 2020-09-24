@@ -1,9 +1,6 @@
 module.exports = {
   extends: [
     require.resolve('./index'),
-    'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
   ],
   plugins: [
     'react',
@@ -64,6 +61,9 @@ module.exports = {
     'jsx-a11y/iframe-has-title': 'warn',
     'jsx-a11y/img-redundant-alt': 'warn',
     'jsx-a11y/no-access-key': 'warn',
+    "jsx-a11y/no-autofocus": [ 'warn', {
+      "ignoreNonDOM": true
+    }],
     'jsx-a11y/no-distracting-elements': 'warn',
     'jsx-a11y/no-redundant-roles': 'warn',
     'jsx-a11y/role-has-required-aria-props': 'warn',
@@ -73,5 +73,11 @@ module.exports = {
     // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-  }
+  },
+  overrides: [{
+    files: ['**/*.ts?(x)'],
+    ecmaFeatures: {
+      jsx: true,
+    },
+  }],
 };
