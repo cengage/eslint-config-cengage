@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cengage",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "Base eslint config for use in JavaScript projects at Cengage",
   "files": [
     "base.js",
@@ -42,6 +42,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-mdx": "^1.8.2",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-unicorn": "^22.0.0",
@@ -53,6 +54,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-mdx": "^1.8.2",
     "eslint-plugin-react": "7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-unicorn": "^22.0.0",

@@ -19,6 +19,13 @@ module.exports = {
       ],
     },
     {
+      plugins: [
+        'mdx'
+      ],
+      files: ['*.mdx', '*.md'],
+      extends: ['plugin:mdx/overrides']
+    },
+    {
       files: ['**/*.ts?(x)'],
       extends: [
         'plugin:import/typescript'
