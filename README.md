@@ -7,7 +7,18 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### Non-React projects
 
 - Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
-- Install peer dependencies: `npm install --save-dev eslint eslint-plugin-unicorn`
+- Install peer dependencies: 
+
+```sh
+npm i --save-dev \
+    "eslint-config-cengage@^2.0.0" \ 
+    "babel-eslint@^10.1.0" \
+    "eslint@^7.9.0" \
+    "eslint-plugin-import@^2.22.0" \  
+    "eslint-plugin-jest@^24.0.2" \
+    "eslint-plugin-unicorn@^22.0.0" \
+   ```
+
 - Create `.eslintrc` file in the project root with the following content
 
 ```json
@@ -21,7 +32,20 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ### React projects
 
 - Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
-- Install peer dependencies: `npm install --save-dev eslint babel-eslint eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-unicorn`
+- Install peer dependencies: 
+```sh
+npm i --save-dev \
+    "eslint-config-cengage@^2.0.0" \ 
+    "babel-eslint@^10.1.0" \
+    "eslint@^7.9.0" \
+    "eslint-plugin-import@^2.22.0" \  
+    "eslint-plugin-jest@^24.0.2" \
+    "eslint-plugin-jsx-a11y@^6.3.1" \
+    "eslint-plugin-react@^7.21.0" \
+    "eslint-plugin-react-hooks@^4.1.2" \   
+    "eslint-plugin-unicorn@^22.0.0" \
+```
+
 - Create `.eslintrc` file in the project root with the following content (adjusting for the appropriate version of React):
 
 ```json
@@ -36,6 +60,43 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ```
 
 **This is a base configuration. You should extend this as needed with project specific options, such as `env` entries for your test framework.**
+
+### TypeScript support
+
+To enable typescript support, add the following dependencies to your project. 
+
+```sh
+npm i --save-dev \
+    "@typescript-eslint/eslint-plugin@^4.2.0" \
+    "@typescript-eslint/parser@^4.2.0" \
+    "typescript@^3.9.4"
+```
+
+The default cengage installation will automatically override the configuration for any `*.ts` or `*.tsx` files.
+
+### Lightweight Base
+
+If even the default `cengage` configuration forces too many rules, you can choose to extend `cengage/base` which adds a minimal amount of rules with no overides for neither jest nor typescript and will force you to manually almost all the rules that are needed. This is not recommended.
+
+- Install `eslint-config-cengage` with: `npm i -D eslint-config-cengage --registry http://nexus.mindtap.corp.web/content/groups/npm.group/`
+- Install peer dependencies: 
+
+```sh
+npm i --save-dev \
+  "eslint-config-cengage@^2.0.0" \ 
+  "eslint@^7.9.0" \
+  "eslint-plugin-import@^2.22.0" \  
+  "eslint-plugin-unicorn@^22.0.0" \
+```
+
+- Create `.eslintrc` file in the project root with the following content
+
+```json
+{
+  "extends": "cengage/base"
+}
+```
+
 
 ## Config Rules and Settings
 

@@ -1,10 +1,14 @@
 {
   "name": "eslint-config-cengage",
-  "version": "1.0.0",
+  "version": "2.0.0-beta.1",
   "description": "Base eslint config for use in JavaScript projects at Cengage",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "files": [
+    "base.js",
+    "index.js",
+    "react.js"
+  ],
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0"
   },
   "keywords": [
     "eslint",
@@ -12,6 +16,14 @@
     "cengage"
   ],
   "contributors": [
+    {
+      "name": "Gillett, Ryan C",
+      "email": "ryan.gillett@cengage.com"
+    },
+    {
+      "name": "Maturen, Aaron T",
+      "email": "aaron.maturen@cengage.com"
+    },
     {
       "name": "Van Slaars, Andy L",
       "email": "andy.vanslaars@cengage.com"
@@ -22,12 +34,34 @@
     "url": "http://stash.corp.web:7990/projects/FRONT/repos/eslint-config-cengage"
   },
   "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-unicorn": "^22.0.0",
+    "typescript": "^3.9.4"
+  },
   "peerDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.0.1",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-unicorn": "^6.0.1"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-unicorn": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "typescript": "^3.9.4"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.9"
   },
   "publishConfig": {
     "registry": "http://nexus.mindtap.corp.web/content/repositories/npm.cengage/"
