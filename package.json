@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cengage",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0",
   "description": "Base eslint config for use in JavaScript projects at Cengage",
   "files": [
     "base.js",
