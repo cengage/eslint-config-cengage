@@ -21,7 +21,8 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       extends: [
-        'plugin:import/typescript'
+        'plugin:import/typescript',
+        'prettier/@typescript-eslint'
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {

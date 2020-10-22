@@ -11,7 +11,8 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 
 ```sh
 npm i --save-dev \
-    "eslint-config-cengage@^2.0.0" \ 
+    "eslint-config-cengage@^2.0.0" \
+    "eslint-config-prettier@6.14.0" \
     "babel-eslint@^10.1.0" \
     "eslint@^7.9.0" \
     "eslint-plugin-import@^2.22.0" \  
@@ -36,6 +37,7 @@ npm i --save-dev \
 ```sh
 npm i --save-dev \
     "eslint-config-cengage@^2.0.0" \ 
+    "eslint-config-prettier@6.14.0" \
     "babel-eslint@^10.1.0" \
     "eslint@^7.9.0" \
     "eslint-plugin-import@^2.22.0" \  
@@ -84,6 +86,7 @@ If even the default `cengage` configuration forces too many rules, you can choos
 ```sh
 npm i --save-dev \
   "eslint-config-cengage@^2.0.0" \ 
+  "eslint-config-prettier@6.14.0" \
   "eslint@^7.9.0" \
   "eslint-plugin-import@^2.22.0" \  
   "eslint-plugin-unicorn@^22.0.0" \
