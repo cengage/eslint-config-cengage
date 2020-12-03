@@ -64,8 +64,5 @@
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.9"
-  },
-  "publishConfig": {
-    "registry": "http://nexus.mindtap.corp.web/content/repositories/npm.cengage/"
   }
 }
