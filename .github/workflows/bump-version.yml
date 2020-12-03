@@ -1,18 +1,19 @@
+name: Create Release
+
 on:
   push:
     branches:
       - master
 
-name: Create Release
-
 jobs:
-  build:
-    name: Create Release
+  version:
     runs-on: ubuntu-latest
     steps:
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
           git-message: 'chore(release): {version}'
@@ -20,7 +21,9 @@ jobs:
           git-user-email: 'github-action@cengage.com'
           preset: 'conventionalcommits'
           tag-prefix: 'v'
-
+  release:
+    runs-on: ubuntu-latest
+    steps:
       - name: Create Release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
