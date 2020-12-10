@@ -20,8 +20,6 @@ module.exports = {
   ],
   extends: [
     'eslint:recommended',
-    'prettier',
-    'prettier/unicorn'
   ],
   rules: {
     complexity: ['error', 10],
