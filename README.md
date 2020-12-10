@@ -12,7 +12,6 @@ This is a shared eslint configuration for JavaScript projects across Cengage.
 ```sh
 npm i --save-dev \
     "eslint-config-cengage@^2.0.0" \
-    "eslint-config-prettier@6.14.0" \
     "babel-eslint@^10.1.0" \
     "eslint@^7.9.0" \
     "eslint-plugin-import@^2.22.0" \  
@@ -37,7 +36,6 @@ npm i --save-dev \
 ```sh
 npm i --save-dev \
     "eslint-config-cengage@^2.0.0" \ 
-    "eslint-config-prettier@6.14.0" \
     "babel-eslint@^10.1.0" \
     "eslint@^7.9.0" \
     "eslint-plugin-import@^2.22.0" \  
@@ -86,7 +84,6 @@ If even the default `cengage` configuration forces too many rules, you can choos
 ```sh
 npm i --save-dev \
   "eslint-config-cengage@^2.0.0" \ 
-  "eslint-config-prettier@6.14.0" \
   "eslint@^7.9.0" \
   "eslint-plugin-import@^2.22.0" \  
   "eslint-plugin-unicorn@^22.0.0" \
@@ -142,16 +139,6 @@ eslint environments provide pre-defined globals for specific environments. The s
 
 ## Local configuration
 
-### Enforcing Prettier's formatting
-
-You may choose to include the `eslint-plugin-prettier` package and specify one rule to enable this:
-
-```js
-rules: {
-  'prettier/prettier': 'error'
-}
-```
-
 This plugin enforces the stylistic preferences defined in your project's Prettier config via eslint. **This is the only place that eslint should be enforcing stylistic rules.**
 
 ### Additional Environments
@@ -165,7 +152,7 @@ Your team may choose to enforce additional rules, on your project(s) as long as 
 1.  Your rules can be more strict, but not reduce the strictness of any of the existing rules. In cases where a rule from this config is causing too much friction, you may temporarily override that rule and discuss with UI architecture if that rule should be changed in the standard, if the exception can be made for your project, or if you need to address that in your codebase.
 2.  Your rules do not conflict with any of the standard rules or automated formatting.
 3.  You are prepared to remove these rules if they conflict with standard rules in future updates.
-4.  Do not add rules that enforce stylistic options. Code format should be handled via Prettier and you can optionally choose to enforce that with the `eslint-plugin-prettier` mentioned above.
+4.  Do not add rules that enforce stylistic options. Code format should be handled via Prettier.
 
 This is subjective, so not listed as a guideline:
 

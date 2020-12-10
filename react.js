@@ -3,7 +3,6 @@ module.exports = {
     require.resolve('./index'),
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'prettier/react',
   ],
   plugins: [
     'react',
