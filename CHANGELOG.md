@@ -1,3 +1,10 @@
+### [2.1.5](https://github.com/cengage/eslint-config-cengage/compare/v2.1.3...v2.1.5) (2020-12-16)
+
+
+### Bug Fixes
+
+* **prettier:** the prettier config disables rules that conflict with prettier ([bc4aa66](https://github.com/cengage/eslint-config-cengage/commit/bc4aa667652c4db7fb3dd8eeb4aa1d44c687d1b1))
+
 ### [2.1.3](https://github.com/cengage/eslint-config-cengage/compare/v2.1.2...v2.1.3) (2020-12-10)
 
 
