@@ -6,7 +6,7 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
@@ -20,8 +20,7 @@ module.exports = {
   ],
   extends: [
     'eslint:recommended',
-    'prettier',	
-    'prettier/unicorn'
+    'prettier'
   ],
   rules: {
     complexity: ['error', 10],
