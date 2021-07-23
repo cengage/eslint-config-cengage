@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cengage",
-  "version": "2.1.5",
+  "version": "3.0.0-beta.1",
   "description": "Base eslint config for use in JavaScript projects at Cengage",
   "files": [
     "base.js",
@@ -39,42 +39,26 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.2",
+    "confusing-browser-globals": "^1.0.10",
     "conventional-changelog-cli": "^2.1.1",
     "conventional-changelog-conventionalcommits": "^4.5.0",
     "conventional-changelog-core": "^4.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.9.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-plugin-unicorn": "^22.0.0",
-    "husky": "^4.3.0",
-    "typescript": "^3.9.4"
-  },
-  "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.9.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.2",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-plugin-unicorn": "^22.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
-    "typescript": "^3.9.4"
-  },
-  "dependencies": {
-    "confusing-browser-globals": "^1.0.10"
+    "eslint-plugin-unicorn": "^34.0.1",
+    "husky": "^7.0.1",
+    "typescript": "^4.3.5"
   }
 }
