@@ -74,16 +74,6 @@
     "@typescript-eslint/parser": "^4.2.0",
     "typescript": "^3.9.4"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "confusing-browser-globals": "^1.0.10"
   }
